@@ -6,7 +6,7 @@ snowboardの用具に関するレビューを投稿、閲覧して情報を共�
 
 ## テスト
 ユーザー:hoge
-メールアドレス:k.shouhei0711@gmail.com
+メールアドレス:hoge@hoge.co.jp
 パスワード:hogehoge
 
 
