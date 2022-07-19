@@ -1,0 +1,35 @@
+.form {
+    margin: 1.3rem;
+}
+
+.header_item {
+    margin-top: 10px;
+}
+
+.header_item ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 50px;
+}
+
+.header_item ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#detail {
+    background: navajowhite;
+}
+
+.detail {
+    border-top: 2px solid black;
+}
+
+.detail-bg {
+    background-color: white;
+}
+
+#heder-list {
+    background: black;
+    color: white;
+}
