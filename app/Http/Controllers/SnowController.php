@@ -194,4 +194,25 @@ class SnowController extends Controller
         return redirect(route('dashboard'));
     }
 
+
+     // 検索表示
+     public function showSearch() {
+        return view('search');
+    }
+    // 検索機能
+    public function search(Request $request)
+    {
+        $keyword = $request->input('keyword');
+
+        $query = snow::query();
+
+        if(!empty($keyword)) {
+            $query->where('title', 'LIKE', "%{$keyword}%")
+                ->orWhere('created_at', 'LIKE', "%{$keyword}%");
+        }
+
+        $snows = $query->get();
+
+        return view('search', compact('snows', 'keyword'));
+    }
 }

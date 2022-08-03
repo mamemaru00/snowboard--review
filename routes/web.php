@@ -58,5 +58,8 @@ Route::post('/snow/update', 'SnowController@UpdateSnow')->name('update');
 // 投稿削除
 Route::post('/snow/delete/{id}', 'SnowController@exeDelete')->name('delete');
 
+// 検索表示
 
-
+// 検索機能
+Route::get('/search', [SnowController::class, 'search'])
+    ->name('search');

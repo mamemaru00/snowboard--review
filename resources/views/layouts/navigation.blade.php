@@ -16,8 +16,12 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         <a class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" style="margin: 1.3rem;"  href="{{ route('create') }}">投稿</a>
                     </x-nav-link>
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('search')">
+                        <a class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" style="margin: 1.3rem;"  href="{{ route('search') }}">検索</a>
+                    </x-nav-link>
                 </div>
             </div>
+
 
             <!-- Settings Dropdown -->
             <!-- <div class="hidden sm:flex sm:items-center sm:ml-6">
