@@ -63,3 +63,6 @@ Route::post('/snow/delete/{id}', 'SnowController@exeDelete')->name('delete');
 // 検索機能
 Route::get('/search', [SnowController::class, 'search'])
     ->name('search');
+
+//いいね機能 
+Route::post('/like', 'ReviewController@like')->name('reviews.like');

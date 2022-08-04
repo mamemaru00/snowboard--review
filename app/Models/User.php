@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use App\like;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -44,6 +45,6 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function likes()
     {
-        return $this->hasMany('App\Like');
+        return $this->hasMany('App\like');
     }
 }

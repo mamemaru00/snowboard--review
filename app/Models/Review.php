@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\like;
 
 class Review extends Model
 {
@@ -11,7 +12,7 @@ class Review extends Model
 
     public function likes()
     {
-        return $this->hasMany('App\Like');
+        return $this->hasMany('App\like');
     }
     //後でViewで使う、いいねされているかを判定するメソッド。
     public function isLikedBy($user): bool {
