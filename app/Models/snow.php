@@ -74,5 +74,6 @@ class snow extends Model{
             $image->content = $request->content;
             $image->image = $snow->image;
             $image->save();
-    }     
+    }
+         
 }
